@@ -80,6 +80,5 @@ public class Main {
             default:
                 System.out.println("Месяця " + monthYear +" не существует.");
         }
-
     }
 }
