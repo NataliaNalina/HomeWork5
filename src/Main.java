@@ -4,7 +4,7 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+      //  Scanner in = new Scanner(System.in);
         System.out.println("Home work if.");
         System.out.println("Задача 1. ");
     }
