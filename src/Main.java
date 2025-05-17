@@ -29,7 +29,7 @@ public class Main {
         System.out.println("Задача 3. Определение високосного года");
         System.out.println("Введите год: ");
         int Year = in.nextInt();
-        if (Year % 4 == 0) {
+        if (Year>=1584 && Year % 4 == 0) {
             if ((Year % 100 == 0 && Year % 400 == 0) || (Year % 100 != 0)) {
                 System.out.println("Год " + Year + " является високосным");
             } else {
