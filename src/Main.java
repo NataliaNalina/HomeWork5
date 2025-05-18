@@ -13,19 +13,16 @@ public class Main {
         System.out.println("Задача 2. ");
         System.out.println("Введите год выпуска телефона: ");
         int clientDeviceYear = in.nextInt();
-        if (clientOS == 1) {
-            if (clientDeviceYear < 2015) {
-                System.out.println("Установите облегченную веррию приложения для Android по ссылке");
-            } else {
-                System.out.println("Установите веррию приложения для Android по ссылке");
-            }
+        if (clientOS == 1 && clientDeviceYear < 2015)  {
+            System.out.println("Установите облегченную веррию приложения для Android по ссылке");
+        } else  if (clientOS == 1 && clientDeviceYear >= 2015)  {
+            System.out.println("Установите веррию приложения для Android по ссылке");
+        } else  if (clientOS == 0 && clientDeviceYear < 2015) {
+            System.out.println("Установите облегченную веррию приложения для iOS по ссылке");
         } else {
-            if (clientDeviceYear < 2015) {
-                System.out.println("Установите облегченную веррию приложения для iOS по ссылке");
-            } else {
-                System.out.println("Установите веррию приложения для iOS по ссылке");
-            }
+            System.out.println("Установите веррию приложения для iOS по ссылке");
         }
+
         System.out.println("Задача 3. Определение високосного года");
         System.out.println("Введите год: ");
         int year = in.nextInt();
