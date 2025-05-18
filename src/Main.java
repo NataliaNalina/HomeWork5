@@ -30,9 +30,9 @@ public class Main {
         System.out.println("Введите год: ");
         int year = in.nextInt();
         if (year>=1584 && ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))) {
-                System.out.println("Год " + year + " является високосным");
+            System.out.println("Год " + year + " является високосным");
         } else {
-                System.out.println("Год " + year +" не является високосным");
+            System.out.println("Год " + year +" не является високосным");
         }
 
         System.out.println("Задача 4. Введите расстояние до вашего дома: ");
@@ -40,11 +40,11 @@ public class Main {
         if (deliveryDistance <=20) {
             System.out.println("Доставка займет 1 день.");
         } else  if (deliveryDistance > 20 && deliveryDistance <= 60)  {
-                System.out.println("Доставка займет 2 дня.");
+            System.out.println("Доставка займет 2 дня.");
         } else if (deliveryDistance > 60 && deliveryDistance <= 100) {
             System.out.println("Доставка займет 3 дня.");
         } else {
-                System.out.println("К сожаленю, доставки до Вас нет.");
+            System.out.println("К сожаленю, доставки до Вас нет.");
         }
 
         System.out.println("Задача 5. Введите номер месяца года: ");
